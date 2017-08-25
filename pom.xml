@@ -50,6 +50,11 @@
 			<artifactId>rocketmq-client</artifactId>
 			<version>3.2.6</version>
 		</dependency>
+		<!--<dependency>
+			<groupId>org.apache.rocketmq</groupId>
+			<artifactId>rocketmq-client</artifactId>
+			<version>4.1.0-incubating</version>
+		</dependency>-->
 	</dependencies>
 
 	<build>

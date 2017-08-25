@@ -1,5 +1,6 @@
 package com.xx.rocketmq.demo.quickstart;
 
+
 import com.alibaba.rocketmq.client.consumer.DefaultMQPushConsumer;
 import com.alibaba.rocketmq.client.consumer.listener.ConsumeConcurrentlyStatus;
 import com.alibaba.rocketmq.client.consumer.listener.MessageListenerConcurrently;
@@ -20,7 +21,7 @@ public class Consumer {
         consumer.setConsumeFromWhere(ConsumeFromWhere.CONSUME_FROM_FIRST_OFFSET);
 
         //订阅一个或者多个消费主题
-        consumer.subscribe("TopicTest", "*");
+        consumer.subscribe("TopicTest1", "*");
 
         //注册一个回调，该回调会在取自broker的消息到达的时候执行
         consumer.registerMessageListener((MessageListenerConcurrently)(msgs, consumeConcurrentlyContext) -> {
